@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ public class MapEx {
 
         map.forEach((key,value)-> System.out.println(key+" "+value));
         map.entrySet().stream().filter(entry ->entry.getKey()=="a").map(entry ->entry.getValue()).forEach(entry -> System.out.println(entry));
-        map.entrySet().stream().sorted((e1,e2)->e1.getKey().compareTo(e2.getKey())).forEach(e-> System.out.println(e));
+        map.entrySet().stream().sorted(Comparator.comparing(Map.Entry::getKey)).forEach(e-> System.out.println(e));
 
     }
 }
