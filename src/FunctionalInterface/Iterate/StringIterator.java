@@ -1,9 +1,10 @@
 package FunctionalInterface.Iterate;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import javax.swing.plaf.IconUIResource;
+import java.util.*;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StringIterator {
     static List<String> list = Arrays.asList("adam lama", "carry k", "bond", "john");
@@ -44,6 +45,20 @@ public class StringIterator {
         list.stream()
                 .sorted(Comparator.comparing(String::length).reversed())
                 .forEach(System.out::println);
+        // get the count of character 'a' from list
+        System.out.println("count of 'a'");
+         String s ="adam lama";
+        long count = s.chars().filter(ch -> ch == 'a').count();
+        System.out.println(count);
+        List<String> a = list.stream().filter(str -> str.contains("a")).collect(Collectors.toList());
+        int sum = 0;
+        for(String str : a){
+            long count1 = str.chars().filter(ch -> ch == 'a').count();
+            sum = (int) (sum+count1);
+        }
+        System.out.println(sum);
+
+
     }
 
 }
