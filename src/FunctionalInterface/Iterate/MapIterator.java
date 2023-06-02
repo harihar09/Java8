@@ -39,6 +39,5 @@ public class MapIterator {
                  .stream()
                  .sorted((entry1,entry2)->entry2.getKey().compareTo(entry1.getKey()))
                  .forEach(entry-> System.out.println(entry.getKey()+" "+entry.getValue()));
-
     }
 }
