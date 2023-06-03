@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -8,11 +10,11 @@ public class PersonService {
     public List<PersonModel> sortedUserList(){
 
         List<PersonModel> sortedList =new PersonDAO().getUsers();
-      //  Collections.sort(sortedList,new MyComparator());
+      //  Collections.sort(sortedList,new FunctionalInterface.commonFiles.MyComparator());
 
-     /*   Collections.sort(sortedList, new Comparator<PersonModel>() {
+     /*   Collections.sort(sortedList, new Comparator<FunctionalInterface.commonFiles.PersonModel>() {
             @Override
-            public int compare(PersonModel o1, PersonModel o2) {
+            public int compare(FunctionalInterface.commonFiles.PersonModel o1, FunctionalInterface.commonFiles.PersonModel o2) {
                 return o1.getAge()-o2.getAge();
             }
         });*/

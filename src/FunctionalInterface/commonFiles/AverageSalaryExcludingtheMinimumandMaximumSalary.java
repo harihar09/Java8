@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 import java.util.Arrays;
 
 public class AverageSalaryExcludingtheMinimumandMaximumSalary {

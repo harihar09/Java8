@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 public class PersonModel {
 
     private String name;
@@ -26,7 +28,7 @@ public class PersonModel {
 
     @Override
     public String toString() {
-        return "PersonModel{" +
+        return "FunctionalInterface.commonFiles.PersonModel{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

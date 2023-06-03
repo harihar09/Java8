@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 import java.util.function.Function;
 
 public class FunctionEx /*implements Function<String,Integer>*/ {
@@ -7,7 +9,7 @@ public class FunctionEx /*implements Function<String,Integer>*/ {
     }*/
 
     public static void main(String[] args) {
-       /* FunctionEx functionEx = new FunctionEx();
+       /* FunctionalInterface.commonFiles.FunctionEx functionEx = new FunctionalInterface.commonFiles.FunctionEx();
         System.out.println(functionEx.apply("hello"));*/
 
         Function<String,Integer> function = s->s.length();

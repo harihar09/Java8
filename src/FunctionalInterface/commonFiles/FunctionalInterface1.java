@@ -1,4 +1,4 @@
-package FunctionalInterface;
+package FunctionalInterface.commonFiles;
 @FunctionalInterface
 public interface FunctionalInterface1 {
     // Single abstract method

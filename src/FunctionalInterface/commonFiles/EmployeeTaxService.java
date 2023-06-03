@@ -1,4 +1,5 @@
-import java.util.Collections;
+package FunctionalInterface.commonFiles;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -7,7 +8,7 @@ public class EmployeeTaxService {
 
     public static void main(String[] args) {
 
-       // System.out.println(EmployeeTaxService.getUsers("non tax"));
+       // System.out.println(FunctionalInterface.commonFiles.EmployeeTaxService.getUsers("non tax"));
 
        List<EmployeeModel> sortedEmpList =  EmployeeDAO.getUsers();
       //  Collections.sort(sortedEmpList);

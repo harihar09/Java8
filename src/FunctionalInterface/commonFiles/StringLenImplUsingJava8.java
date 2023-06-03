@@ -1,4 +1,4 @@
-package FunctionalInterface;
+package FunctionalInterface.commonFiles;
 
 public class StringLenImplUsingJava8 {
     public static void main(String[] args) {

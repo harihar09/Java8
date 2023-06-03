@@ -1,4 +1,4 @@
-package FunctionalInterface;
+package FunctionalInterface.commonFiles;
 
 // implementation using java 7
 public class StringLengthImplUsingJava7 implements FunctionalInterface1{

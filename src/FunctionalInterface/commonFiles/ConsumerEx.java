@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 import javax.print.DocFlavor;
 import java.util.function.Consumer;
 
@@ -8,7 +10,7 @@ public class ConsumerEx/* implements Consumer<String>*/ {
     }*/
 
     public static void main(String[] args) {
-       /* ConsumerEx consumerEx = new ConsumerEx();
+       /* FunctionalInterface.commonFiles.ConsumerEx consumerEx = new FunctionalInterface.commonFiles.ConsumerEx();
         consumerEx.accept("hi");*/
 
         Consumer<String> consumer = s-> System.out.println(s);

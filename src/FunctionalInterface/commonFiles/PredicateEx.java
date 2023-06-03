@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 import java.util.function.Predicate;
 
 public class PredicateEx /*implements Predicate<Integer>*/ {
@@ -12,7 +14,7 @@ public class PredicateEx /*implements Predicate<Integer>*/ {
     }*/
 
     public static void main(String[] args) {
-       /*  PredicateEx obj = new PredicateEx();
+       /*  FunctionalInterface.commonFiles.PredicateEx obj = new FunctionalInterface.commonFiles.PredicateEx();
         System.out.println(obj.test(11));*/
 
         Predicate<Integer> predicate = (i)->i%2==0;

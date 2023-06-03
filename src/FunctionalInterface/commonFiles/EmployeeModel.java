@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 import java.util.Comparator;
 
 public class EmployeeModel implements Comparator<EmployeeModel> {
@@ -39,7 +41,7 @@ public class EmployeeModel implements Comparator<EmployeeModel> {
 
     @Override
     public String toString() {
-        return "EmployeeModel{" +
+        return "FunctionalInterface.commonFiles.EmployeeModel{" +
                 "name='" + name + '\'' +
                 ", department='" + department + '\'' +
                 ", salary=" + salary +

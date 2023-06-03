@@ -1,3 +1,5 @@
+package FunctionalInterface.commonFiles;
+
 public interface AdditionFunctionalInterface {
 
     public int addition(int a, int b);
