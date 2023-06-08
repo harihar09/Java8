@@ -25,6 +25,11 @@ public class HighestSalFromDept {
                                                 .maxBy(Comparator
                                                         .comparing(Employee::getSal)))));
         System.out.println(empMap2);
+// second approach
+        Map<String, Optional<Employee>> map = employees
+                .stream()
+                .collect(Collectors.groupingBy(Employee::getDept, Collectors.maxBy(Comparator.comparing(Employee::getSal))));
+        System.out.println(map);
     }
 
 }
