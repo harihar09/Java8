@@ -108,10 +108,8 @@ public class EmployeeApp {
                 .filter(employee -> employee.getDepartment().equalsIgnoreCase("cs" ))
                 .filter(employee -> employee.getGender().equalsIgnoreCase("female" ))
                 .collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)))
-                .map(employee -> employee.getFirstName());
+                .map(Employee::getFirstName);
 
         System.out.println("female first Name from CS department with highest salary "+firstName.get());
-
-
     }
 }
