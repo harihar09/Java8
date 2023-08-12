@@ -10,5 +10,11 @@ public class PredicateApp {
         //Using java8
         Predicate<Integer> predicate1 = integer -> integer%2==0;
         System.out.println(predicate1.test(19));
+
+        // check empty string
+        Predicate<String> emptyCheck = String::isEmpty;
+        String string = "It's not an empty string, should return false";
+        System.out.println(emptyCheck.test(string));
+
     }
 }
