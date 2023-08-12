@@ -8,7 +8,8 @@ public class FunctionApp {
         Function function = new FunctionImpl();
         System.out.println(function.apply("hey"));
         // using java8
-        Function<String,Integer> function1 = (str)->str.length();
+        // function takes two parameters one is input and second is return type
+        Function<String, Integer> function1 = string -> string.length();
         System.out.println(function1.apply("hi"));
     }
 }

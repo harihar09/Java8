@@ -6,7 +6,7 @@ import Java8.Stream.EmployeeApp;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;
 
 public class DebugStreamUsingPeek {
     // Employee predicate for pune city
@@ -30,7 +30,7 @@ public class DebugStreamUsingPeek {
                 .peek(employee -> System.out.println("After second filter "+employee.getFirstName()))
                 .map(employee -> employee.getFirstName())
                 .peek(firstName)  // consumer which accept String type data
-                .collect(Collectors.toList());
+                .collect(toList());
         System.out.println(employeesFirstNames);
     }
 }
