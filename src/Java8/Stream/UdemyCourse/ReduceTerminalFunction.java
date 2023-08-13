@@ -3,6 +3,7 @@ package Java8.Stream.UdemyCourse;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 /*It reduces the elements to one value, takes two parameters
 first is initial value and second is Binary operator.*/
@@ -10,9 +11,12 @@ public class ReduceTerminalFunction {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 
-        Integer maxNumber = list.stream()
-                .reduce(1, Math::max);
-        System.out.println("max is " + maxNumber);
+        Optional<Integer> maxNumber = list.stream()
+                // as a best practice is to not use default or initial value
+                // instead we can directly us max method and return optional as o/p
+                // .reduce(1, Math::max)
+                .reduce(Math::max);
+        System.out.println("max is " + maxNumber.get());
 
         Integer integer = list.stream()
                 .max(Comparator.naturalOrder())
@@ -22,6 +26,10 @@ public class ReduceTerminalFunction {
         Integer maxUsingReduce = list.stream()
                 .reduce(1, (a, b) -> a > b ? a : b);
         System.out.println("max using reduce " + maxUsingReduce);
+
+        Optional<Integer> max = list.stream()
+                .reduce((a, b) -> a > b ? a : b);
+        System.out.println("max ----" + max.get());
 
         Integer multiplication = list.stream()
                 //1
