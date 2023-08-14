@@ -1,9 +1,8 @@
 package Java8.Stream.UdemyCourse.TerminalOperations;
 
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.joining;
 
 public class Joining {
     public static void main(String[] args) {
